@@ -12,6 +12,11 @@ jobs:
   upload-arrow-files:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+      packages: write
+      actions: write
+
     steps:
     - name: Checkout the code
       uses: actions/checkout@v4
